@@ -11,12 +11,6 @@ if __name__ == "__main__":
      "| |_| | | | \__ \ | (__  | (_) | | |    | (_| | |_____|  | |  | | | |   | | |  __/ | (__  | |_ \n"+
      "|____/  |_| |___/  \___|  \___/  |_|     \__,_|         |___| |_| |_|  _/ |  \___|  \___|  \__|\n"+
      "                                                                      |__/                     \n# Made by: Florian ( Made for educational purposes only :D )")
-    try:
-        import requests
-        print(Fore.CYAN+"> All modules satisfied")
-    except ModuleNotFoundError:
-        os.system('pip install requests')
-        import requests
     print(Fore.GREEN)
     os.system("taskkill /F /im discord.exe")
     for x in os.listdir(PATH):
