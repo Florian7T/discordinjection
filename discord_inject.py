@@ -1,4 +1,4 @@
-import os
+import os,requests
 from colorama import  Fore,Back
 
 PATH = os.getenv('APPDATA')+"\\Discord"
